@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "catalogID": "bloombox.official-community.tweaks",
+  "updatedAt": "2026-10-29",
+  "safety": "Native code executes inside guest apps. Only owner-reviewed releases should be listed. A separate review is required for every new binary version.",
+  "tweakEntries": [
+    {
+      "id": "sambafix-v3",
+      "name": "SambaFix",
+      "developer": "BloomBox / SambaFix",
+      "version": "3",
+      "priority": "full",
+      "description": "Corrige el inicio de Samba de Amigo sin usar CloudKit real.",
+      "bundleID": "com.sega.samba.app",
+      "downloadURL": "https://github.com/adri23rep-stack/BloomBox/releases/download/sambafix-v3/SambaFix.dylib",
+      "sha256": "4c60b88b2379ba56f854b7091abb5910ca03d41f22553875171da355a4a23dea",
+      "fileType": "dylib",
+      "minIOS": "15.0",
+      "testedInBloomBox": false,
+      "notes": "La nube de iCloud queda desactivada; los datos del juego son locales.",
+      "alertLevel": 3,
+      "alertTitle": "Corrección imprescindible",
+      "alertMessage": "Samba de Amigo necesita SambaFix v3 para superar el problema de CloudKit. Sin este parche el juego puede cerrarse o no iniciar.",
+      "fileName": "SambaFix.dylib",
+      "supportedApps": [
+        {
+          "bundleID": "com.sega.samba.app"
+        }
+      ],
+      "minAppVersion": null,
+      "maxAppVersion": null,
+      "officialSourceURL": "https://github.com/adri23rep-stack/Samba-iOS-Fix",
+      "appStoreID": 1641321225
+    }
+  ],
+  "entrySchema": {
+    "id": "string / globally unique",
+    "name": "string",
+    "developer": "name of the original tweak author or team; credit must match the actual published source",
+    "officialSourceURL": "optional HTTPS link to original developer repository or official website, displayed as a credit (never used to download executable code)",
+    "version": "string",
+    "downloadURL": "https://... (direct trusted .dylib, .framework.zip, or reviewed archive)",
+    "sha256": "64-character lowercase hexadecimal digest of the actual release asset",
+    "fileType": "dylib | framework | archive",
+    "supportedApps": [
+      {
+        "bundleID": "original bundle ID or installed bundle folder",
+        "minVersion": "optional",
+        "maxVersion": "optional"
+      }
+    ],
+    "minIOS": "optional",
+    "maxIOS": "optional",
+    "requiresJIT": false,
+    "verifiedInBloomBox": false,
+    "scope": "app-only",
+    "warnings": [
+      "string"
+    ],
+    "alertLevel": "0=sin aviso, 1=informativo, 2=importante, 3=máximo antes de abrir",
+    "alertTitle": "optional text, shown before launch at level 3",
+    "alertMessage": "optional explanation, shown before launch at level 3",
+    "fileName": "stable filename ending in .dylib, no path separators",
+    "minAppVersion": "optional legacy version lower bound",
+    "maxAppVersion": "optional legacy version upper bound",
+    "appStoreID": "optional numeric Apple App Store track ID; look up official artworkUrl512",
+    "appIconURL": "optional direct HTTPS official Apple CDN (mzstatic.com) icon URL; takes precedence over lookup; falls back to installed-app icon if missing/unavailable"
+  }
+}
