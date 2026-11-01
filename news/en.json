@@ -2,5 +2,19 @@
   "schemaVersion": 1,
   "locale": "en",
   "updatedAt": "2026-11-01",
-  "articles": []
+  "articles": [],
+  "posts": [
+    {
+      "id": "bloombox-2-widgets",
+      "title": "BloomBox 2.0 · Your desktop, your rules 🫧",
+      "text": "Freeform widgets are coming: photos, animated GIFs and adjustable sizes among your apps.",
+      "media": "https://raw.githubusercontent.com/adri23rep-stack/BloomBox/main/screenshots/showcase/widgets.jpeg"
+    },
+    {
+      "id": "bloombox-alive",
+      "title": "BloomBox Alive 🌊",
+      "text": "The icon wave is in testing. This section updates from GitHub without reinstalling the IPA.",
+      "media": ""
+    }
+  ]
 }
