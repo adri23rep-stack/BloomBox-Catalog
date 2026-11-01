@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "defaultLocale": "en",
+  "supportedLocales": [
+    "es",
+    "en"
+  ],
+  "feeds": {
+    "es": "news/es.json",
+    "en": "news/en.json"
+  },
+  "fallbackLocale": "en"
+}
