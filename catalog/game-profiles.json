@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "catalogID": "bloombox.game-compatibility",
+  "updatedAt": "2026-11-02",
+  "description": "Exact guest bundle-ID matches. Data only; compatibility changes require first-run approval.",
+  "profiles": [
+    {
+      "bundleID": "com.husk.app",
+      "name": "Husk",
+      "revision": 1,
+      "gameMode": true,
+      "requiresRAMPlus": true,
+      "requiresJIT": true,
+      "compatibility": {
+        "orientation": "landscape",
+        "jitNeeded": true
+      },
+      "evidence": "Verified Husk project.yml bundle identifier; landscape and JIT confirmed on iPhone 14 Pro/iOS 27 using BloomBox.",
+      "notes": "Disable Husk's Play without JIT when using executable-memory JIT. Keep its custom script choice unchanged."
+    }
+  ]
+}
