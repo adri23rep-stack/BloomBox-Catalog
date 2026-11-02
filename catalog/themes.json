@@ -1,4 +1,13 @@
 {
   "version": 1,
-  "themes": []
+  "themes": [
+    {
+      "id": "nintendo-neon",
+      "name": "Nintendo Neon",
+      "author": "Adri",
+      "description": "Fan-made neon green animated desktop with a Pixel Time clock and five Nintendo-themed Living Widgets.",
+      "downloadURL": "https://raw.githubusercontent.com/adri23rep-stack/BloomBox-Catalog/main/themes/nintendo-neon/manifest.json",
+      "previewURL": null
+    }
+  ]
 }
