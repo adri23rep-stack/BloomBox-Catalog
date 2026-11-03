@@ -975,6 +975,33 @@
         "Se recomienda tener unos 30 GB libres y 6 GB de RAM. Dentro de BloomBox no están verificados los accesos a archivos, la memoria disponible ni la compatibilidad como app invitada.",
         "No hay IPA adjunta a las releases de GitHub. La SHA-256 procede de la página oficial del proyecto; comprueba el archivo descargado. No se ha auditado el binario."
       ]
+    },
+    {
+      "id": "lemonx-binaries",
+      "name": "LemoNX (Binaries)",
+      "creator": "LTChipotle (página de compilaciones)",
+      "category": "emulation",
+      "description": "Compilaciones de LemoNX para iOS. Visita la página del proyecto para consultar las instrucciones de instalación y la versión disponible; no se ha confirmado una IPA concreta.",
+      "officialWebsite": "https://ltchipotle.codeberg.page/LemoNX.Binaries/#install",
+      "officialReleases": "https://ltchipotle.codeberg.page/LemoNX.Binaries/#install",
+      "currentOfficialRelease": "Sin versión verificada",
+      "directDownloadURL": null,
+      "releaseResolution": "external-install-page-unverified",
+      "installMode": "external",
+      "sourceVerified": false,
+      "featured": false,
+      "useAtOwnRisk": true,
+      "installsInsideBloomBox": "not-tested",
+      "aliases": [
+        "LemoNX",
+        "LemoNX Binaries"
+      ],
+      "notes": "Entrada externa solicitada para la AppStore de BloomBox. El sitio de Codeberg no pudo consultarse desde el entorno de verificación, por lo que no se confirmó nombre, versión ni SHA-256 de una IPA. BloomBox solo abre la página del autor; no intenta descargar o instalar automáticamente.",
+      "warnings": [
+        "No se ha verificado ninguna IPA ni su integridad; descarga únicamente desde la página original cuando puedas comprobar su procedencia.",
+        "No se ha probado la compatibilidad con iOS 27 ni la ejecución como app invitada de BloomBox.",
+        "El soporte y los requisitos de JIT/RAM+ deben consultarse en las instrucciones oficiales antes de instalar."
+      ]
     }
   ],
   "safety": "Curated app listings point to official upstream publishers. Native IPA files execute code; no automatic installs without an HTTPS original release asset, SHA-256, user consent, and verified guest-app installer capability.",
