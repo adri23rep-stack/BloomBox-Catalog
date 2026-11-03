@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogID": "bloombox.official-community.apps",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-03",
   "purpose": "Community app listings. App binaries remain hosted by their verified original publishers.",
   "apps": [
     {
@@ -893,6 +893,49 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
+      ]
+    },
+    {
+      "id": "vita3kios",
+      "name": "Vita3KiOS",
+      "creator": "oledz-i / Vita3K contributors",
+      "category": "emulation",
+      "description": "Emulador experimental de PlayStation Vita para iPhone y iPad, basado en Vita3K. Permite cargar tus propios juegos, actualizaciones y DLC; admite controles táctiles y mandos compatibles.",
+      "officialWebsite": "https://github.com/oledz-i/Vita3KiOS",
+      "officialReleases": "https://github.com/oledz-i/Vita3KiOS/releases/tag/v1.0.0",
+      "releaseSource": {
+        "type": "github-releases",
+        "owner": "oledz-i",
+        "repo": "Vita3KiOS",
+        "assetFileName": "Vita3KiOS-1.0.0.ipa"
+      },
+      "currentOfficialRelease": "1.0.0",
+      "directDownloadURL": "https://github.com/oledz-i/Vita3KiOS/releases/download/v1.0.0/Vita3KiOS-1.0.0.ipa",
+      "fileName": "Vita3KiOS-1.0.0.ipa",
+      "sha256": "bb3735d69b839b2889b415130fc23796ee1a3d9ad8cbb775f4ddb502c6e0bb2d",
+      "releaseResolution": "verified-github-release-asset-digest-only",
+      "installMode": "guest",
+      "sourceVerified": true,
+      "featured": true,
+      "useAtOwnRisk": true,
+      "installsInsideBloomBox": "not-tested",
+      "bundleID": "org.vita3k.ios",
+      "aliases": [
+        "Vita3K iOS",
+        "Vita3K",
+        "PS Vita",
+        "PlayStation Vita"
+      ],
+      "jit": {
+        "externalHelper": "StikDebug",
+        "scriptStatus": "upstream-uses-universal.js",
+        "bloomboxTested": false
+      },
+      "notes": "IPA oficial v1.0.0 publicada por oledz-i; descarga directa verificada contra el SHA-256 declarado en GitHub. Requiere iOS 17.4 o posterior, chip A12 o más reciente y JIT para emulación; el autor indica soporte para LiveContainer, pero no se ha probado la versión como app invitada de BloomBox. Necesitas el firmware y las copias de tus propios juegos.",
+      "warnings": [
+        "Emulador experimental: no todos los juegos son compatibles; requiere tus propios archivos de firmware y juegos.",
+        "El JIT del lanzamiento se documenta con StikDebug/universal.js. El JIT integrado de BloomBox y la ejecución en iOS 27 todavía no están verificados con Vita3KiOS.",
+        "Se verificó la procedencia y el SHA-256 publicado por GitHub, pero no se ha auditado la IPA. La instalación y ejecución como invitada de BloomBox están pendientes de prueba."
       ]
     }
   ],
