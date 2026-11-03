@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "catalogID": "bloombox.game-compatibility",
+  "updatedAt": "2026-11-02",
+  "profiles": [
+    {
+      "bundleID": "com.husk.app",
+      "name": "Husk",
+      "revision": 1,
+      "gameMode": true,
+      "requiresRAMPlus": true,
+      "requiresJIT": true,
+      "compatibility": {
+        "orientation": "landscape",
+        "jitNeeded": true,
+        "classicMode": false
+      },
+      "evidence": "Tested on an iPhone 14 Pro running iOS 27 with BloomBox LiveProcess and the Husk-specific JIT script. The user verified Minecraft Dungeons gameplay and landscape display.",
+      "notes": "Game Mode needs RAM+ and a configured JIT provider. JIT is attached per launch. If a custom script is required, the user selects it locally; catalog entries cannot download or execute scripts."
+    }
+  ]
+}
