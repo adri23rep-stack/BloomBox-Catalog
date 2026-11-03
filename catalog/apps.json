@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "catalogID": "bloombox.official-community.apps",
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-03",
   "purpose": "Community app listings. App binaries remain hosted by their verified original publishers.",
   "apps": [
     {
@@ -893,6 +893,114 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
+      ]
+    },
+    {
+      "id": "vita3kios",
+      "name": "Vita3KiOS",
+      "creator": "oledz-i / Vita3K contributors",
+      "category": "emulation",
+      "description": "Emulador experimental de PlayStation Vita para iPhone y iPad, basado en Vita3K. Permite cargar tus propios juegos, actualizaciones y DLC; admite controles táctiles y mandos compatibles.",
+      "officialWebsite": "https://github.com/oledz-i/Vita3KiOS",
+      "officialReleases": "https://github.com/oledz-i/Vita3KiOS/releases/tag/v1.0.0",
+      "releaseSource": {
+        "type": "github-releases",
+        "owner": "oledz-i",
+        "repo": "Vita3KiOS",
+        "assetFileName": "Vita3KiOS-1.0.0.ipa"
+      },
+      "currentOfficialRelease": "1.0.0",
+      "directDownloadURL": "https://github.com/oledz-i/Vita3KiOS/releases/download/v1.0.0/Vita3KiOS-1.0.0.ipa",
+      "fileName": "Vita3KiOS-1.0.0.ipa",
+      "sha256": "bb3735d69b839b2889b415130fc23796ee1a3d9ad8cbb775f4ddb502c6e0bb2d",
+      "releaseResolution": "verified-github-release-asset-digest-only",
+      "installMode": "guest",
+      "sourceVerified": true,
+      "featured": true,
+      "useAtOwnRisk": true,
+      "installsInsideBloomBox": "not-tested",
+      "bundleID": "org.vita3k.ios",
+      "aliases": [
+        "Vita3K iOS",
+        "Vita3K",
+        "PS Vita",
+        "PlayStation Vita"
+      ],
+      "jit": {
+        "externalHelper": "StikDebug",
+        "scriptStatus": "upstream-uses-universal.js",
+        "bloomboxTested": false
+      },
+      "notes": "IPA oficial v1.0.0 publicada por oledz-i; descarga directa verificada contra el SHA-256 declarado en GitHub. Requiere iOS 17.4 o posterior, chip A12 o más reciente y JIT para emulación; el autor indica soporte para LiveContainer, pero no se ha probado la versión como app invitada de BloomBox. Necesitas el firmware y las copias de tus propios juegos.",
+      "warnings": [
+        "Emulador experimental: no todos los juegos son compatibles; requiere tus propios archivos de firmware y juegos.",
+        "El JIT del lanzamiento se documenta con StikDebug/universal.js. El JIT integrado de BloomBox y la ejecución en iOS 27 todavía no están verificados con Vita3KiOS.",
+        "Se verificó la procedencia y el SHA-256 publicado por GitHub, pero no se ha auditado la IPA. La instalación y ejecución como invitada de BloomBox están pendientes de prueba."
+      ]
+    },
+    {
+      "id": "gta5-ios-five-star-port",
+      "name": "GTA V Port (5★ Port)",
+      "creator": "kevinerikjs / Five Star Port contributors",
+      "category": "ports",
+      "description": "Port experimental y no oficial de GTA V para iPhone y iPad, con renderizado nativo Metal, controles táctiles y compatibilidad con mandos. La IPA NO incluye el juego ni sus archivos.",
+      "officialWebsite": "https://github.com/kevinerikjs/gta5-ios-port",
+      "officialReleases": "https://fivestarport.site/download/",
+      "releaseSource": {
+        "type": "publisher-website",
+        "url": "https://fivestarport.site/download/",
+        "assetFileName": "GTA5Port-iOS-v1.5.2.ipa"
+      },
+      "currentOfficialRelease": "1.5.2",
+      "directDownloadURL": "https://fivestarport.site/downloads/GTA5Port-iOS-v1.5.2.ipa",
+      "fileName": "GTA5Port-iOS-v1.5.2.ipa",
+      "sha256": "42724954c1daff374919370a0db19976f7e5bf7bb073cb727bb2de06d4d12d34",
+      "releaseResolution": "publisher-site-ipa-with-published-sha256",
+      "installMode": "external",
+      "sourceVerified": true,
+      "featured": false,
+      "useAtOwnRisk": true,
+      "installsInsideBloomBox": "not-tested",
+      "aliases": [
+        "GTA V Port",
+        "GTA5 Port",
+        "GTA5Port",
+        "Five Star Port",
+        "Grand Theft Auto V"
+      ],
+      "notes": "La release de GitHub v1.5.2 no contiene IPA; la descarga oficial se ofrece desde fivestarport.site, con SHA-256 publicado por el autor. El port requiere específicamente los archivos del antiguo build web 8b0b5899ed (carpetas data/ y b/8b0b5899ed/, ~21 GB); una instalación normal de GTA V para PC no cumple necesariamente ese requisito. El desarrollador recomienda iOS 16+, 6 GB RAM y alrededor de 30 GB libres. RAM+ mejora la memoria disponible. Se enlaza como instalación externa (SideStore/AltStore) porque no se ha comprobado el acceso a archivos del juego ni el funcionamiento como invitado en BloomBox.",
+      "warnings": [
+        "Proyecto fan no oficial de Rockstar Games/Take-Two. La IPA no incluye GTA V, mapas ni datos del juego.",
+        "Solo funciona con los archivos específicos del build web 8b0b5899ed (~21 GB). No se ofrece ninguna descarga de datos del juego; no asumas que los archivos de GTA V para PC sean compatibles.",
+        "Se recomienda tener unos 30 GB libres y 6 GB de RAM. Dentro de BloomBox no están verificados los accesos a archivos, la memoria disponible ni la compatibilidad como app invitada.",
+        "No hay IPA adjunta a las releases de GitHub. La SHA-256 procede de la página oficial del proyecto; comprueba el archivo descargado. No se ha auditado el binario."
+      ]
+    },
+    {
+      "id": "lemonx-binaries",
+      "name": "LemoNX (Binaries)",
+      "creator": "LTChipotle (página de compilaciones)",
+      "category": "emulation",
+      "description": "Compilaciones de LemoNX para iOS. Visita la página del proyecto para consultar las instrucciones de instalación y la versión disponible; no se ha confirmado una IPA concreta.",
+      "officialWebsite": "https://ltchipotle.codeberg.page/LemoNX.Binaries/#install",
+      "officialReleases": "https://ltchipotle.codeberg.page/LemoNX.Binaries/#install",
+      "currentOfficialRelease": "Sin versión verificada",
+      "directDownloadURL": null,
+      "releaseResolution": "external-install-page-unverified",
+      "installMode": "external",
+      "sourceVerified": false,
+      "featured": false,
+      "useAtOwnRisk": true,
+      "installsInsideBloomBox": "not-tested",
+      "aliases": [
+        "LemoNX",
+        "LemoNX Binaries"
+      ],
+      "notes": "Entrada externa solicitada para la AppStore de BloomBox. El sitio de Codeberg no pudo consultarse desde el entorno de verificación, por lo que no se confirmó nombre, versión ni SHA-256 de una IPA. BloomBox solo abre la página del autor; no intenta descargar o instalar automáticamente.",
+      "warnings": [
+        "No se ha verificado ninguna IPA ni su integridad; descarga únicamente desde la página original cuando puedas comprobar su procedencia.",
+        "No se ha probado la compatibilidad con iOS 27 ni la ejecución como app invitada de BloomBox.",
+        "El soporte y los requisitos de JIT/RAM+ deben consultarse en las instrucciones oficiales antes de instalar."
       ]
     }
   ],
