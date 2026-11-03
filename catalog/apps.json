@@ -937,6 +937,44 @@
         "El JIT del lanzamiento se documenta con StikDebug/universal.js. El JIT integrado de BloomBox y la ejecución en iOS 27 todavía no están verificados con Vita3KiOS.",
         "Se verificó la procedencia y el SHA-256 publicado por GitHub, pero no se ha auditado la IPA. La instalación y ejecución como invitada de BloomBox están pendientes de prueba."
       ]
+    },
+    {
+      "id": "gta5-ios-five-star-port",
+      "name": "GTA V Port (5★ Port)",
+      "creator": "kevinerikjs / Five Star Port contributors",
+      "category": "ports",
+      "description": "Port experimental y no oficial de GTA V para iPhone y iPad, con renderizado nativo Metal, controles táctiles y compatibilidad con mandos. La IPA NO incluye el juego ni sus archivos.",
+      "officialWebsite": "https://github.com/kevinerikjs/gta5-ios-port",
+      "officialReleases": "https://fivestarport.site/download/",
+      "releaseSource": {
+        "type": "publisher-website",
+        "url": "https://fivestarport.site/download/",
+        "assetFileName": "GTA5Port-iOS-v1.5.2.ipa"
+      },
+      "currentOfficialRelease": "1.5.2",
+      "directDownloadURL": "https://fivestarport.site/downloads/GTA5Port-iOS-v1.5.2.ipa",
+      "fileName": "GTA5Port-iOS-v1.5.2.ipa",
+      "sha256": "42724954c1daff374919370a0db19976f7e5bf7bb073cb727bb2de06d4d12d34",
+      "releaseResolution": "publisher-site-ipa-with-published-sha256",
+      "installMode": "external",
+      "sourceVerified": true,
+      "featured": false,
+      "useAtOwnRisk": true,
+      "installsInsideBloomBox": "not-tested",
+      "aliases": [
+        "GTA V Port",
+        "GTA5 Port",
+        "GTA5Port",
+        "Five Star Port",
+        "Grand Theft Auto V"
+      ],
+      "notes": "La release de GitHub v1.5.2 no contiene IPA; la descarga oficial se ofrece desde fivestarport.site, con SHA-256 publicado por el autor. El port requiere específicamente los archivos del antiguo build web 8b0b5899ed (carpetas data/ y b/8b0b5899ed/, ~21 GB); una instalación normal de GTA V para PC no cumple necesariamente ese requisito. El desarrollador recomienda iOS 16+, 6 GB RAM y alrededor de 30 GB libres. RAM+ mejora la memoria disponible. Se enlaza como instalación externa (SideStore/AltStore) porque no se ha comprobado el acceso a archivos del juego ni el funcionamiento como invitado en BloomBox.",
+      "warnings": [
+        "Proyecto fan no oficial de Rockstar Games/Take-Two. La IPA no incluye GTA V, mapas ni datos del juego.",
+        "Solo funciona con los archivos específicos del build web 8b0b5899ed (~21 GB). No se ofrece ninguna descarga de datos del juego; no asumas que los archivos de GTA V para PC sean compatibles.",
+        "Se recomienda tener unos 30 GB libres y 6 GB de RAM. Dentro de BloomBox no están verificados los accesos a archivos, la memoria disponible ni la compatibilidad como app invitada.",
+        "No hay IPA adjunta a las releases de GitHub. La SHA-256 procede de la página oficial del proyecto; comprueba el archivo descargado. No se ha auditado el binario."
+      ]
     }
   ],
   "safety": "Curated app listings point to official upstream publishers. Native IPA files execute code; no automatic installs without an HTTPS original release asset, SHA-256, user consent, and verified guest-app installer capability.",
