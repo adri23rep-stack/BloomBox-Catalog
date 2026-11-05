@@ -142,6 +142,20 @@
       "note": "Game Boy Advance emulator."
     },
     {
+      "id": "husk-android",
+      "bundleIDs": [],
+      "keywords": [
+        "Husk",
+        "Husk Android"
+      ],
+      "provider": "wikipedia",
+      "query": "Android (operating system)",
+      "note": "Husk is an Android emulator/runtime, NOT Minecraft Dungeons. Pinned photo is an Android gaming handset (Xperia Play) as a generic platform illustration, not Husk's logo or an emulated game's artwork. Photo by Evan-Amos, public domain.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Sony-Xperia-Play-Open-FL.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Sony-Xperia-Play-Open-FL.jpg",
+      "imageLicense": "Public domain"
+    },
+    {
       "id": "rdr-port",
       "bundleIDs": [],
       "keywords": [
