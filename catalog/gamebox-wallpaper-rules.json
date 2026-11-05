@@ -14,7 +14,10 @@
       ],
       "provider": "wikipedia",
       "query": "Nintendo Switch",
-      "note": "MeloNX/MelonNX emulates Nintendo Switch; exact bundle ID to be added after inspection of the installed IPA."
+      "note": "MeloNX/MelonNX emulates Nintendo Switch; exact bundle ID to be added after inspection of the installed IPA. Curated Evan-Amos console photograph (public domain), linked to the Commons file details.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Nintendo-Switch-Console-Flat-Top.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Flat-Top.jpg",
+      "imageLicense": "Public domain"
     },
     {
       "id": "lemonx-switch",
@@ -26,7 +29,10 @@
       ],
       "provider": "wikipedia",
       "query": "Nintendo Switch",
-      "note": "Nintendo Switch emulator; no unverified bundle ID."
+      "note": "Nintendo Switch emulator; no unverified bundle ID. Curated Evan-Amos console photograph (public domain), linked to the Commons file details.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Nintendo-Switch-Console-Flat-Top.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Flat-Top.jpg",
+      "imageLicense": "Public domain"
     },
     {
       "id": "dolphinios-gamecube",
@@ -40,7 +46,10 @@
       ],
       "provider": "wikipedia",
       "query": "Nintendo GameCube",
-      "note": "Generic GameCube background for the Wii/GameCube emulator, not game cover art."
+      "note": "Generic GameCube background for the Wii/GameCube emulator, not game cover art. Curated Evan-Amos console photograph (public domain), linked to the Commons file details.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Nintendo-GameCube-Console-FL.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Nintendo-GameCube-Console-FL.jpg",
+      "imageLicense": "Public domain"
     },
     {
       "id": "melocafe-wiiu",
@@ -52,7 +61,10 @@
       ],
       "provider": "wikipedia",
       "query": "Wii U",
-      "note": "Wii U emulator. Do not use an unverified or placeholder bundle ID."
+      "note": "Wii U emulator. Do not use an unverified or placeholder bundle ID. Curated Evan-Amos console photograph (public domain), linked to the Commons file details.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nintendo-Wii-U-Console-FL.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Nintendo-Wii-U-Console-FL.jpg",
+      "imageLicense": "Public domain"
     },
     {
       "id": "vita3k-vita",
@@ -66,7 +78,10 @@
       ],
       "provider": "wikipedia",
       "query": "PlayStation Vita",
-      "note": "PlayStation Vita emulator."
+      "note": "PlayStation Vita emulator. Curated Evan-Amos console photograph (public domain), linked to the Commons file details.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/c/c1/PlayStation-Vita-2001-FL.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:PlayStation-Vita-2001-FL.jpg",
+      "imageLicense": "Public domain"
     },
     {
       "id": "ppsspp-psp",
@@ -77,7 +92,10 @@
       ],
       "provider": "wikipedia",
       "query": "PlayStation Portable",
-      "note": "PSP emulator."
+      "note": "PSP emulator. Curated Evan-Amos console photograph (public domain), linked to the Commons file details.",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Sony-PSP-1000-Body.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:Sony-PSP-1000-Body.jpg",
+      "imageLicense": "Public domain"
     },
     {
       "id": "retroarch-console",
@@ -122,18 +140,6 @@
       "provider": "wikipedia",
       "query": "Game Boy Advance",
       "note": "Game Boy Advance emulator."
-    },
-    {
-      "id": "husk-dungeons",
-      "bundleIDs": [
-        "com.husk.app"
-      ],
-      "keywords": [
-        "Husk"
-      ],
-      "provider": "steam",
-      "query": "Minecraft Dungeons",
-      "note": "Known guest port identity; source exact game only."
     },
     {
       "id": "rdr-port",
