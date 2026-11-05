@@ -42,7 +42,7 @@ commands, executable code, tokens, guest paths, permissions or app settings.
 BloomBox rejects unsafe URLs, mismatched Commons filenames, missing attribution,
 unverified license labels, ambiguous aliases and unsafe provider/topic combinations.
 
-## Pinned artwork (first six emulators)
+## Pinned artwork (seven emulators)
 
 | Emulator | Chosen hardware photograph | Attribution |
 |---|---|---|
@@ -52,15 +52,17 @@ unverified license labels, ambiguous aliases and unsafe provider/topic combinati
 | MeloCafe | Wii U | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Nintendo-Wii-U-Console-FL.jpg) |
 | Vita3KiOS | PlayStation Vita | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:PlayStation-Vita-2001-FL.jpg) |
 | PPSSPP | PSP | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Sony-PSP-1000-Body.jpg) |
+| Husk | Android gaming device (Xperia Play; representative hardware, not a Husk logo) | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Sony-Xperia-Play-Open-FL.jpg) |
 
 These are console photographs, not screenshots or guessed box art. They are
 downloaded only on demand, decoded at screen size, and cached for offline use.
 No third-party artwork binaries are bundled into BloomBox.
 
 **Husk is an Android app/emulation environment**, not Minecraft Dungeons.
-The previous inaccurate Husk → Minecraft Dungeons rule was removed. Leave its
-wallpaper blank until a verified Android-themed image is approved. Users may
-always set a personal wallpaper from Photos or Files.
+The previous inaccurate Husk → Minecraft Dungeons rule was removed. It now
+uses a verified public-domain image of Android gaming hardware, never a random
+Steam game cover. Users can still set their preferred Husk wallpaper from
+Photos or Files.
 
 ## Testing and rollout
 
