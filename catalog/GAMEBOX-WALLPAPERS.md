@@ -1,15 +1,18 @@
 # GameBox v2 — curated wallpaper rules
 
 The `gamebox-wallpaper-rules.json` registry maps **installed app identities**
-to a specific background search topic. This is separate from
+to an explicitly selected image or a specific background search topic. This is separate from
 `game-profiles.json`, which controls guest compatibility and JIT.
 
 ## Priority
 
 1. Exact installed **CFBundleIdentifier** in `bundleIDs`.
 2. Exact normalized name from `keywords` (accents/case ignored), optionally followed by a version or a safe label like `beta`/`iOS`/`emulator`. Arbitrary fragments and unrelated suffixes never match.
-3. BloomBox's existing conservative artwork fallback.
-4. Existing app icon and gradient, if no usable image exists.
+3. If a rule has a vetted direct image URL, download it **first**.
+4. If unavailable, use the rule's precise console/game search topic.
+5. Otherwise, preserve the existing app icon and gradient.
+
+**Manual wallpapers and covers always outrank every automatic download.**
 
 Example: `MeloNX` or `MelonNX` → Wikipedia article `Nintendo Switch`.
 No game image is guessed for an emulator: it gets a platform illustration.
@@ -26,14 +29,38 @@ Add a new entry in `catalog/gamebox-wallpaper-rules.json` with:
 - `provider`: `wikipedia` (known console topic) or `steam` (verified title).
 - `query`: precise article title or exact Steam game name.
 - `note`: why this is an appropriate mapping.
+- `imageURL` *(optional)*: a vetted **HTTPS direct image** hosted on `upload.wikimedia.org/wikipedia/commons/`. No arbitrary hosts or redirects outside the approved image CDN.
+- `sourceURL` *(required with imageURL)*: the matching Commons `https://commons.wikimedia.org/wiki/File:...` attribution/license page.
+- `imageLicense` *(required with imageURL)*: currently only `Public domain`, verified manually on the image file page.
 
 Use `bundleIDs: []` when the real bundle ID is not verified, then add it
 after inspection. Each alias must be unique across the entire file after
 normalizing accents, punctuation and case.
 
-**Never add** direct image URLs, scripts, commands, executable code, tokens,
-guest paths, permissions or app settings. BloomBox rejects unexpected fields,
-ambiguous aliases and unsafe provider/topic combinations.
+**Never add** unverified images, arbitrary HTTP/image-host URLs, scripts,
+commands, executable code, tokens, guest paths, permissions or app settings.
+BloomBox rejects unsafe URLs, mismatched Commons filenames, missing attribution,
+unverified license labels, ambiguous aliases and unsafe provider/topic combinations.
+
+## Pinned artwork (first six emulators)
+
+| Emulator | Chosen hardware photograph | Attribution |
+|---|---|---|
+| MeloNX / MelonNX | Nintendo Switch | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Flat-Top.jpg) |
+| LemoNX | Nintendo Switch | [Same public-domain image](https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Flat-Top.jpg) |
+| DolphiniOS | GameCube | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Nintendo-GameCube-Console-FL.jpg) |
+| MeloCafe | Wii U | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Nintendo-Wii-U-Console-FL.jpg) |
+| Vita3KiOS | PlayStation Vita | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:PlayStation-Vita-2001-FL.jpg) |
+| PPSSPP | PSP | [Evan-Amos, public domain](https://commons.wikimedia.org/wiki/File:Sony-PSP-1000-Body.jpg) |
+
+These are console photographs, not screenshots or guessed box art. They are
+downloaded only on demand, decoded at screen size, and cached for offline use.
+No third-party artwork binaries are bundled into BloomBox.
+
+**Husk is an Android app/emulation environment**, not Minecraft Dungeons.
+The previous inaccurate Husk → Minecraft Dungeons rule was removed. Leave its
+wallpaper blank until a verified Android-themed image is approved. Users may
+always set a personal wallpaper from Photos or Files.
 
 ## Testing and rollout
 
