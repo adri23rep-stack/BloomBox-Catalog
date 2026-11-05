@@ -7,7 +7,7 @@ to a specific background search topic. This is separate from
 ## Priority
 
 1. Exact installed **CFBundleIdentifier** in `bundleIDs`.
-2. Exact normalized name from `keywords` (accents/case ignored, **not** a substring).
+2. Exact normalized name from `keywords` (accents/case ignored), optionally followed by a version or a safe label like `beta`/`iOS`/`emulator`. Arbitrary fragments and unrelated suffixes never match.
 3. BloomBox's existing conservative artwork fallback.
 4. Existing app icon and gradient, if no usable image exists.
 
