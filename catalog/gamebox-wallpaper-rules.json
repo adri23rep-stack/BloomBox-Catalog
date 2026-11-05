@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "catalogID": "bloombox.gamebox.wallpaper-rules",
+  "updatedAt": "2026-11-05",
+  "rules": [
+    {
+      "id": "melonnx-switch",
+      "bundleIDs": [],
+      "keywords": [
+        "MeloNX",
+        "MelonNX",
+        "Melon NX",
+        "MelonNX Emulator"
+      ],
+      "provider": "wikipedia",
+      "query": "Nintendo Switch",
+      "note": "MeloNX/MelonNX emulates Nintendo Switch; exact bundle ID to be added after inspection of the installed IPA."
+    },
+    {
+      "id": "lemonx-switch",
+      "bundleIDs": [],
+      "keywords": [
+        "LemoNX",
+        "Lemon NX",
+        "LemoNX Binaries"
+      ],
+      "provider": "wikipedia",
+      "query": "Nintendo Switch",
+      "note": "Nintendo Switch emulator; no unverified bundle ID."
+    },
+    {
+      "id": "dolphinios-gamecube",
+      "bundleIDs": [
+        "me.oatmealdome.DolphiniOS-njb-patreon-beta"
+      ],
+      "keywords": [
+        "DolphiniOS",
+        "Dolphin iOS",
+        "Dolphin Emulator"
+      ],
+      "provider": "wikipedia",
+      "query": "Nintendo GameCube",
+      "note": "Generic GameCube background for the Wii/GameCube emulator, not game cover art."
+    },
+    {
+      "id": "melocafe-wiiu",
+      "bundleIDs": [],
+      "keywords": [
+        "MeloCafe",
+        "Melo Café",
+        "Melo Cafe",
+        "Cemu"
+      ],
+      "provider": "wikipedia",
+      "query": "Wii U",
+      "note": "Wii U emulator. Do not use an unverified or placeholder bundle ID."
+    },
+    {
+      "id": "vita3k-vita",
+      "bundleIDs": [
+        "org.vita3k.ios"
+      ],
+      "keywords": [
+        "Vita3K",
+        "Vita3KiOS",
+        "Vita3K iOS"
+      ],
+      "provider": "wikipedia",
+      "query": "PlayStation Vita",
+      "note": "PlayStation Vita emulator."
+    },
+    {
+      "id": "ppsspp-psp",
+      "bundleIDs": [],
+      "keywords": [
+        "PPSSPP",
+        "PPSSPP Gold"
+      ],
+      "provider": "wikipedia",
+      "query": "PlayStation Portable",
+      "note": "PSP emulator."
+    },
+    {
+      "id": "retroarch-console",
+      "bundleIDs": [],
+      "keywords": [
+        "RetroArch",
+        "RetroArch iOS"
+      ],
+      "provider": "wikipedia",
+      "query": "Video game console",
+      "note": "Multisystem emulator; use a generic console image, never guess a specific game."
+    },
+    {
+      "id": "delta-ds",
+      "bundleIDs": [],
+      "keywords": [
+        "Delta",
+        "Delta Emulator"
+      ],
+      "provider": "wikipedia",
+      "query": "Nintendo DS",
+      "note": "Exact app name matching; 'Delta Force' is not this emulator."
+    },
+    {
+      "id": "folium-3ds",
+      "bundleIDs": [],
+      "keywords": [
+        "Folium",
+        "Folium Emulator"
+      ],
+      "provider": "wikipedia",
+      "query": "Nintendo 3DS",
+      "note": "Nintendo 3DS emulator."
+    },
+    {
+      "id": "mgba-gba",
+      "bundleIDs": [],
+      "keywords": [
+        "mGBA",
+        "mGBA Emulator"
+      ],
+      "provider": "wikipedia",
+      "query": "Game Boy Advance",
+      "note": "Game Boy Advance emulator."
+    },
+    {
+      "id": "husk-dungeons",
+      "bundleIDs": [
+        "com.husk.app"
+      ],
+      "keywords": [
+        "Husk"
+      ],
+      "provider": "steam",
+      "query": "Minecraft Dungeons",
+      "note": "Known guest port identity; source exact game only."
+    },
+    {
+      "id": "rdr-port",
+      "bundleIDs": [],
+      "keywords": [
+        "RDR",
+        "RDR - IOSVIZOR.COM",
+        "Red Dead Redemption"
+      ],
+      "provider": "steam",
+      "query": "Red Dead Redemption",
+      "note": "Red Dead Redemption port; actual guest bundle ID remains unverified."
+    },
+    {
+      "id": "gta5-port",
+      "bundleIDs": [],
+      "keywords": [
+        "GTA5",
+        "GTA V Port",
+        "Grand Theft Auto V Port",
+        "Five Star Port"
+      ],
+      "provider": "steam",
+      "query": "Grand Theft Auto V",
+      "note": "Known GTA V port names; no guessed bundle ID."
+    }
+  ]
+}
