@@ -7,6 +7,7 @@ Remote catalog for the BloomBox App Store, Tweak Store and localized News.
 - [Apps](catalog/apps.json) — migrated from [BloomBox PR #22](https://github.com/adri23rep-stack/BloomBox/pull/22), including DolphiniOS.
 - [Tweaks v1](catalog/tweaks.json) — legacy compatible feed.
 - [Tweaks v2](catalog/tweaks-v2.json) — expanded community listings.
+- [GameBox wallpaper rules](catalog/gamebox-wallpaper-rules.json) — verified bundle IDs and exact app aliases mapped to console/game artwork topics ([editing guide](catalog/GAMEBOX-WALLPAPERS.md)).
 - [News locale index](news/index.json) — resolves Spanish and English feeds.
 - [Noticias en español](news/es.json)
 - [News in English](news/en.json)
