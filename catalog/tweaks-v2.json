@@ -30,7 +30,9 @@
       "minAppVersion": null,
       "maxAppVersion": null,
       "officialSourceURL": "https://github.com/adri23rep-stack/Samba-iOS-Fix",
-      "appStoreID": 1641321225
+      "appStoreID": 1641321225,
+      "descriptionEn": "Fixes Samba de Amigo startup without using real CloudKit.",
+      "notesEn": "iCloud sync is disabled; game data remains local."
     },
     {
       "id": "marketplace-adblock-v1",
@@ -59,7 +61,9 @@
       "warnings": [
         "Uso bajo tu propio riesgo. No se ha verificado en BloomBox ni en el iPhone del usuario."
       ],
-      "appStoreID": 284882215
+      "appStoreID": 284882215,
+      "descriptionEn": "Hides ads inside Facebook Marketplace.",
+      "notesEn": "The creator tested it with Facebook iOS 584.0.0; other versions or BloomBox may not work."
     },
     {
       "id": "isaac-eid-ios-v1-1-2",
@@ -82,7 +86,9 @@
       "warnings": [
         "Uso bajo tu propio riesgo. No se ha verificado en BloomBox ni en el iPhone del usuario.",
         "No instalar el .dylib suelto en lugar del framework recomendado."
-      ]
+      ],
+      "descriptionEn": "Full item descriptions for The Binding of Isaac: Repentance on iOS.",
+      "notesEn": "For LiveContainer, the author requires a ZIP framework and its resources in an app-specific folder; this is not a standalone dylib install."
     },
     {
       "id": "aiupscale-metalfx-v0-0-4",
@@ -104,7 +110,9 @@
       "notes": "Tweak genérico para juegos Metal. Falta selector seguro de app destino y pruebas de rendimiento para habilitar instalación. Puede subir uso de GPU y batería.",
       "warnings": [
         "Uso bajo tu propio riesgo. No se ha verificado en BloomBox ni en el iPhone del usuario."
-      ]
+      ],
+      "descriptionEn": "MetalFX spatial upscaling for Metal games launched inside LiveContainer.",
+      "notesEn": "Generic tweak for Metal games. Safe target-app selection and performance testing are still needed."
     },
     {
       "id": "instaplus-v1-0-2-1",
@@ -133,7 +141,9 @@
       "warnings": [
         "Uso bajo tu propio riesgo. No se ha verificado en BloomBox ni en el iPhone del usuario."
       ],
-      "appStoreID": 389801252
+      "appStoreID": 389801252,
+      "descriptionEn": "Media tools, visual customization, and privacy options for Instagram.",
+      "notesEn": "The author requires Sideload Spoofer when installing via Sideloadly; some features may require additional setup."
     },
     {
       "id": "ios-app-dylib-patches",
@@ -156,7 +166,9 @@
       "warnings": [
         "Uso bajo tu propio riesgo. No se ha verificado en BloomBox ni en el iPhone del usuario.",
         "No ejecutar cargadores remotos sin una revisión independiente."
-      ]
+      ],
+      "descriptionEn": "Collection of source-code patches for apps running in LiveContainer.",
+      "notesEn": "Source-code repository without a single ready-to-install .dylib. Contains different patch projects and requires manual builds."
     }
   ],
   "entrySchema": {

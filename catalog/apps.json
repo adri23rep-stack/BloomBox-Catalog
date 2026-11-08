@@ -38,7 +38,9 @@
       "warnings": [
         "Compatibilidad de la versión 0.12.21 como app invitada de BloomBox todavía no comprobada.",
         "Por las restricciones de iOS, la app invitada no obtiene acceso automático a archivos privados de otras apps ni a todo el sistema."
-      ]
+      ],
+      "descriptionEn": "iPhone file explorer with dual panes, file management, network connections, and an encrypted Takopi Vault. Back up and restore the vault with Takopi PC Bridge.",
+      "notesEn": "Official NikaView IPA for LiveContainer. Downloaded from the original release; BloomBox checks SHA-256 before installation. The Windows Takopi PC Bridge executable is not included."
     },
     {
       "id": "youtube-plus-mrdrvt99",
@@ -75,7 +77,9 @@
         "App no oficial de Google; integridad de archivo no equivale a seguridad.",
         "Binarios de terceros sin auditoría completa y versión beta.",
         "Compatibilidad con BloomBox como app invitada aún sin pruebas."
-      ]
+      ],
+      "descriptionEn": "Modified YouTube client for iOS with downloads, background playback, and customization. Not an official Google app.",
+      "notesEn": "Security not verified: the release source and SHA-256 were confirmed, but the IPA was NOT fully audited. It includes third-party modified libraries; a malicious app could access Google session data. Consider a secondary account."
     },
     {
       "id": "ytmusicultimate-mrdrvt99",
@@ -111,7 +115,9 @@
         "App no oficial de Google; la suma SHA-256 no demuestra ausencia de malware.",
         "El tweak modifica inicio de sesión y llavero; la IPA final no ha sido auditada.",
         "No se ha probado dentro de BloomBox."
-      ]
+      ],
+      "descriptionEn": "Modified YouTube Music client for iOS with background playback, ad blocking, and audio options. Not an official Google app.",
+      "notesEn": "Security not verified: the release URL and SHA-256 were confirmed. Reviewing parts of a fork is not an IPA audit; signing in shares session data with the app. Use a secondary account for sensitive accounts."
     },
     {
       "id": "dolphinios-public-beta",
@@ -154,7 +160,9 @@
         "Versión beta: puede presentar fallos y requiere JIT para un rendimiento jugable.",
         "La compatibilidad como app invitada en BloomBox con iOS 27 no está verificada.",
         "No incluye juegos; utiliza copias de tus propios discos."
-      ]
+      ],
+      "descriptionEn": "Nintendo GameCube and Wii emulator for iPhone and iPad. Public beta 5.0.0b6 adds JIT support for iOS 27 beta; compatibility inside BloomBox is not yet verified.",
+      "notesEn": "Official non-jailbroken iPhone IPA link. BloomBox automatic installation is disabled until its exact SHA-256 is verified. The developer recommends SideStore to install and StikDebug for JIT; built-in BloomBox JIT still requires testing."
     },
     {
       "id": "melonx",
@@ -188,7 +196,9 @@
       "sourceVerified": false,
       "featured": true,
       "useAtOwnRisk": true,
-      "notes": "Releases alojados en Forgejo. Sin descarga IPA confirmada desde GitHub; consulta siempre la web oficial antes de instalar."
+      "notes": "Releases alojados en Forgejo. Sin descarga IPA confirmada desde GitHub; consulta siempre la web oficial antes de instalar.",
+      "descriptionEn": "Nintendo Switch emulator for iPhone and iPad.",
+      "notesEn": "Releases are hosted on Forgejo. No confirmed GitHub IPA download; always check the official website before installing."
     },
     {
       "id": "melocafe",
@@ -229,7 +239,9 @@
       "aliases": [
         "MeloCafé",
         "Melo Cafe"
-      ]
+      ],
+      "descriptionEn": "Wii U emulator based on Cemu for iOS. Running it inside BloomBox and using JIT still requires testing.",
+      "notesEn": "JIT and container memory still require testing. The IPA installs inside BloomBox, not directly on iOS. Its reference bundle ID comes from the official Xcode project and may change when signed. BloomBox also matches normalized app names."
     },
     {
       "id": "delta",
@@ -246,7 +258,9 @@
       "sourceVerified": true,
       "featured": true,
       "useAtOwnRisk": true,
-      "notes": "La última IPA pública encontrada no tiene SHA-256 publicado en GitHub API. Abrir lanzamiento oficial; no iniciar instalación automática sin hash."
+      "notes": "La última IPA pública encontrada no tiene SHA-256 publicado en GitHub API. Abrir lanzamiento oficial; no iniciar instalación automática sin hash.",
+      "descriptionEn": "Classic console emulator for iOS. Official link provided; compatibility as a BloomBox guest app has not been verified.",
+      "notesEn": "The latest public IPA found has no SHA-256 published through the GitHub API. Open the official release; automatic installation is disabled without a hash."
     },
     {
       "id": "utm-se",
@@ -265,7 +279,9 @@
       "sourceVerified": true,
       "featured": false,
       "useAtOwnRisk": true,
-      "notes": "IPA de ~237 MB. Instalar fuera de BloomBox mediante herramientas compatibles; ejecución dentro de LiveContainer no verificada."
+      "notes": "IPA de ~237 MB. Instalar fuera de BloomBox mediante herramientas compatibles; ejecución dentro de LiveContainer no verificada.",
+      "descriptionEn": "Virtual machines and emulation without JIT for iOS; BloomBox compatibility is not confirmed.",
+      "notesEn": "Approximately 237 MB IPA. Install outside BloomBox using compatible tools; running in LiveContainer is not verified."
     },
     {
       "id": "stikdebug",
@@ -284,7 +300,9 @@
       "sourceVerified": true,
       "featured": false,
       "useAtOwnRisk": true,
-      "notes": "Requiere instalación real en iOS con firmado y permisos correspondientes. No instalar dentro de BloomBox."
+      "notes": "Requiere instalación real en iOS con firmado y permisos correspondientes. No instalar dentro de BloomBox.",
+      "descriptionEn": "On-device debugger and JIT enabler. This is an iOS helper app, not a regular BloomBox guest.",
+      "notesEn": "Requires a real iOS installation, signing, and matching permissions. Do not install as a BloomBox guest."
     },
     {
       "id": "madeira",
@@ -321,7 +339,9 @@
         "Uso bajo tu propio riesgo: el proyecto es experimental y la compatibilidad varía por juego.",
         "Madeira necesita JIT y la capacidad Memory+; su instalador integrado de JIT utiliza una extensión que debe conservarse.",
         "Es una aplicación que se firma e instala directamente en iOS, no dentro de BloomBox."
-      ]
+      ],
+      "descriptionEn": "Runs Windows x86 and x86-64 games on iPhone using FEX-Emu, Wine, and Metal. Experimental project; performance varies by game.",
+      "notesEn": "Requires iOS 26+, JIT, and Memory+. On iOS 27, it may pair through its own setup wizard. Install in iOS with SideStore and preserve its extensions. Do not install as a BloomBox guest."
     },
     {
       "id": "galaxypad",
@@ -351,7 +371,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Super Mario Galaxy for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "PadMint recipe, not a prebuilt IPA. Import your game data after building a personal IPA. Requires a USA RMGE01 rev. 0 WBFS copy."
     },
     {
       "id": "kartpad",
@@ -381,7 +403,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Mario Kart Wii / Retro Rewind for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "The release's ios-for-padmint.ipa is not the full game. PadMint builds your personal copy using Mario Kart Wii PAL RMCP01 rev. 0 data. A separate listing covers the experimental full IPA 0.7.13; version 0.8.6 still needs PadMint."
     },
     {
       "id": "kartpad-legacy-0713",
@@ -413,7 +437,9 @@
         "Solo instalar la IPA completa de 64.5 MB, no la IPA de PadMint de 8.6 MB.",
         "Requiere los datos de tu propia copia autorizada de Mario Kart Wii; no incluye ROM, ISO o WBFS.",
         "Instalación experimental dentro de BloomBox: haz copia de tus partidas antes de actualizar y no sobrescribas una instalación más reciente."
-      ]
+      ],
+      "descriptionEn": "Earlier KartPad release for iPhone and iPad: a full game-engine IPA. Install first, then import files from your own Mario Kart Wii copy. This version may have issues fixed in newer releases.",
+      "notesEn": "The official 0.7.13 release marks KartPad-v0.7.13-ios.ipa as ready to install. Do not confuse it with the incomplete -ios-for-padmint IPA. After installing, import your own Mario Kart Wii data using Import Game. This older version may have fixed issues. No ROMs included."
     },
     {
       "id": "bluewake",
@@ -443,7 +469,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of The Legend of Zelda: The Wind Waker for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "The published iOS IPA does not include the game code. Use PadMint with your authorized Wind Waker USA GZLE01 image."
     },
     {
       "id": "sunpad",
@@ -473,7 +501,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Super Mario Sunshine for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "The release IPA is a PadMint base, not a playable download by itself. Supply your own game data."
     },
     {
       "id": "meleepad",
@@ -503,7 +533,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Super Smash Bros. Melee for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Base iOS IPA and PadMint recipe; not considered playable until prepared with your own game data."
     },
     {
       "id": "goldenpad",
@@ -533,7 +565,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of GoldenEye 007 (N64) for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "PadMint recipe only, without a complete public IPA. Build a personal copy using your own game."
     },
     {
       "id": "harkinianpad",
@@ -563,7 +597,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of The Legend of Zelda: Ocarina of Time for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Based on Ship of Harkinian. PadMint recipe for creating a personal installation from an authorized game copy."
     },
     {
       "id": "maskpad",
@@ -593,7 +629,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of The Legend of Zelda: Majora's Mask for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Based on 2 Ship 2 Harkinian. Distributed as a PadMint recipe, not a complete playable IPA."
     },
     {
       "id": "paperpad",
@@ -623,7 +661,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Paper Mario (Nintendo 64) for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Only a PadMint recipe and checksums are published; bring your own game for a personal build."
     },
     {
       "id": "bellpad",
@@ -653,7 +693,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Animal Crossing (GameCube) for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Experimental project; PadMint recipe without a bundled game or ready-to-install IPA."
     },
     {
       "id": "starshippad",
@@ -683,7 +725,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Star Fox 64 for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Based on Starship. Build with PadMint using your own game files."
     },
     {
       "id": "spaghettipad",
@@ -713,7 +757,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Mario Kart 64 for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Based on SpaghettiKart. Publishes a PadMint recipe to create your own app."
     },
     {
       "id": "ctrpad",
@@ -743,7 +789,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Crash Team Racing (PS1) for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Experimental native port. Release contains a PadMint recipe, not a complete prebuilt game."
     },
     {
       "id": "ballpad",
@@ -773,7 +821,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Super Mario Strikers for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Experimental iPhone/iPad port. Release only includes a PadMint recipe and checksums."
     },
     {
       "id": "brawlerpad",
@@ -803,7 +853,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Super Smash Bros. (N64) for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Experimental iOS port. Build a personal app with PadMint and your own game files."
     },
     {
       "id": "barrelpad",
@@ -833,7 +885,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Diddy Kong Racing for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Experimental port. PadMint recipe, without a prebuilt game IPA."
     },
     {
       "id": "f0x",
@@ -863,7 +917,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of F-Zero X for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Native iOS/macOS port based on G-Diffuser. PadMint recipe, no public playable IPA."
     },
     {
       "id": "halopad",
@@ -893,7 +949,9 @@
         "Uso bajo tu propio riesgo. Port comunitario no verificado dentro de BloomBox.",
         "Consulta el release original y PadMint; no hay botón de instalación directa de juego precompilado.",
         "Aporta únicamente tu propia copia autorizada del juego; no se incluyen ROM, ISO, WBFS ni archivos con derechos de terceros."
-      ]
+      ],
+      "descriptionEn": "Community port of Halo: Combat Evolved for Apple devices, using recompilation or native engines depending on the project.",
+      "notesEn": "Experimental port. The Xbox edition has its own GitHub build workflow; may require a paid Apple developer account, JIT, and your own resources. Follow the project's documentation."
     },
     {
       "id": "vita3kios",
@@ -936,7 +994,9 @@
         "Emulador experimental: no todos los juegos son compatibles; requiere tus propios archivos de firmware y juegos.",
         "El JIT del lanzamiento se documenta con StikDebug/universal.js. El JIT integrado de BloomBox y la ejecución en iOS 27 todavía no están verificados con Vita3KiOS.",
         "Se verificó la procedencia y el SHA-256 publicado por GitHub, pero no se ha auditado la IPA. La instalación y ejecución como invitada de BloomBox están pendientes de prueba."
-      ]
+      ],
+      "descriptionEn": "Experimental PlayStation Vita emulator for iPhone and iPad based on Vita3K. Supports your own games, updates, and DLC, with touch controls and compatible controllers. Requires JIT.",
+      "notesEn": "Official v1.0.0 IPA from oledz-i, with direct download verified against the published GitHub SHA-256. Requires iOS 17.4+, A12 or newer, and JIT for emulation. The author lists LiveContainer support, but this build has not been verified as a BloomBox guest. Bring your own firmware and games."
     },
     {
       "id": "gta5-ios-five-star-port",
@@ -974,7 +1034,9 @@
         "Solo funciona con los archivos específicos del build web 8b0b5899ed (~21 GB). No se ofrece ninguna descarga de datos del juego; no asumas que los archivos de GTA V para PC sean compatibles.",
         "Se recomienda tener unos 30 GB libres y 6 GB de RAM. Dentro de BloomBox no están verificados los accesos a archivos, la memoria disponible ni la compatibilidad como app invitada.",
         "No hay IPA adjunta a las releases de GitHub. La SHA-256 procede de la página oficial del proyecto; comprueba el archivo descargado. No se ha auditado el binario."
-      ]
+      ],
+      "descriptionEn": "Experimental, unofficial GTA V port for iPhone and iPad with native Metal rendering, touch controls, and controller support. The IPA does NOT include the game or its data files.",
+      "notesEn": "The GitHub v1.5.2 release has no IPA. The developer provides a download through fivestarport.site and publishes a SHA-256. The port specifically needs files from the older web build 8b0b5899ed (data/ and b/8b0b5899ed/ folders, around 21 GB). A normal GTA V PC installation may not qualify. The developer recommends iOS 16+, 6 GB RAM, and around 30 GB of free space. RAM+ can help. External installation only (SideStore/AltStore), since game-file access and guest compatibility in BloomBox are unverified."
     },
     {
       "id": "lemonx-binaries",
@@ -1001,7 +1063,9 @@
         "No se ha verificado ninguna IPA ni su integridad; descarga únicamente desde la página original cuando puedas comprobar su procedencia.",
         "No se ha probado la compatibilidad con iOS 27 ni la ejecución como app invitada de BloomBox.",
         "El soporte y los requisitos de JIT/RAM+ deben consultarse en las instrucciones oficiales antes de instalar."
-      ]
+      ],
+      "descriptionEn": "LemoNX builds for iOS. Visit the project's site for installation instructions and available versions; a specific IPA has not been verified.",
+      "notesEn": "External listing requested for the BloomBox App Store. Codeberg could not be reached from the verification environment, so no IPA filename, version, or SHA-256 was confirmed. BloomBox only opens the developer's site and does not try an automatic download or installation."
     }
   ],
   "safety": "Curated app listings point to official upstream publishers. Native IPA files execute code; no automatic installs without an HTTPS original release asset, SHA-256, user consent, and verified guest-app installer capability.",
