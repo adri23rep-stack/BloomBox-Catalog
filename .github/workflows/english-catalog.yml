@@ -1,0 +1,16 @@
+name: English catalog validation
+
+on:
+  push:
+    branches: [feature/english-catalog-20261108]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify bilingual app, tweak and news catalogs
+        run: python3 Scripts/check-english-catalog.py
