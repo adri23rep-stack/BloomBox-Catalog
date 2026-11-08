@@ -32,7 +32,9 @@
       "officialSourceURL": "https://github.com/adri23rep-stack/Samba-iOS-Fix",
       "appStoreID": 1641321225,
       "descriptionEn": "Fixes Samba de Amigo startup without using real CloudKit.",
-      "notesEn": "iCloud sync is disabled; game data remains local."
+      "notesEn": "iCloud sync is disabled; game data remains local.",
+      "alertTitleEn": "Required compatibility fix",
+      "alertMessageEn": "Samba de Amigo needs SambaFix v3 to work around a CloudKit issue. Without the fix, the game may crash or fail to launch."
     },
     {
       "id": "marketplace-adblock-v1",
